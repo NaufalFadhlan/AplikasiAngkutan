@@ -32,11 +32,9 @@
                 var radius = e.accuracy;
                 L.marker(e.latlng).addTo(map)
                     .bindPopup("Akurasi " + radius + " meter").openPopup();
-                L.circle(e.latlng, radius).addTo(map);
             }
             map.on('locationfound', onLocationFound);
         }
-
     </script>
 </body>
 </html>
